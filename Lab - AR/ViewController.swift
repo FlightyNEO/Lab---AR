@@ -6,13 +6,18 @@
 //  Copyright © 2019 Arkadiy Grigoryanc. All rights reserved.
 //
 
-import UIKit
-import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    
+    // MARK: - Private properties
+    var sceneHouseName = "art.scnassets/Building/lowpoly_house.dae"
+    var sceneCarName = "art.scnassets/Car/van 003a_2012.dae"
+    var sceneHuman1Name = "art.scnassets/Character/Cas-Sum_Man_RtStand_366.dae"
+    var sceneHuman2Name = "art.scnassets/Character2/7.scn"
+    var sceneStreetLightName = "art.scnassets/Street light/Street light.scn"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +27,26 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
+        sceneView.debugOptions = [.showWorldOrigin, .showFeaturePoints]
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene(named: sceneHouseName)!
         
         // Set the scene to the view
         sceneView.scene = scene
+        
+        // Create car
+        addCarToScene()
+        
+        // Create plane
+        addPlaneToScene()
+        
+        // Create character
+        addCharactersToScene()
+        
+        // Create street light
+        addStreetLightToScene()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +64,56 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Pause the view's session
         sceneView.session.pause()
+    }
+    
+    // MARK: Private methods
+    
+    // --- add car
+    private func addCarToScene() {
+        let car = nodeFrom(sceneCarName)
+        sceneView.scene.rootNode.addChildNode(car)
+    }
+    
+    // --- add grass
+    private func addPlaneToScene() {
+        
+        let plane = SCNNode(geometry: SCNPlane(width: 1.5, height: 1.5))
+        plane.position = SCNVector3(0.35, 0, -0.35)
+        plane.eulerAngles = SCNVector3(-(90 as Float).radians, -(45 as Float).radians, 0)
+        plane.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "grass.jpg")
+        sceneView.scene.rootNode.addChildNode(plane)
+        
+    }
+    
+    // --- add street light
+    private func addStreetLightToScene() {
+        
+        let lamp = nodeFrom(sceneStreetLightName)
+        sceneView.scene.rootNode.addChildNode(lamp)
+        
+    }
+    
+    // --- add human
+    private func addCharactersToScene() {
+        
+        addCharacterToScene()
+        addCharacter2ToScene()
+        
+    }
+    
+    private func addCharacterToScene() {
+        let human = nodeFrom(sceneHuman1Name)
+        sceneView.scene.rootNode.addChildNode(human)
+    }
+    
+    private func addCharacter2ToScene() {
+        let human = nodeFrom(sceneHuman2Name)
+        sceneView.scene.rootNode.addChildNode(human)
+    }
+    
+    
+    private func nodeFrom(_ sceneFile: String) -> SCNNode {
+        return SCNScene(named: sceneFile)!.rootNode
     }
 
     // MARK: - ARSCNViewDelegate
