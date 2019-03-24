@@ -18,20 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp4-EL-1h9">
-                                <rect key="frame" x="56.5" y="318.5" width="262" height="30"/>
-                                <state key="normal" title="Immerse yourself in augmented reality"/>
-                                <connections>
-                                    <segue destination="BV1-FR-VrT" kind="show" id="Pdi-jf-br3"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g5a-B7-QTa">
+                                <rect key="frame" x="16" y="296.5" width="343" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp4-EL-1h9">
+                                        <rect key="frame" x="40.5" y="0.0" width="262" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Immerse yourself in augmented reality"/>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="show" id="Pdi-jf-br3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning: Loading stunning augmented reality can take some time." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpB-XB-je3">
+                                        <rect key="frame" x="0.0" y="38" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xoU-0B-l86" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bp4-EL-1h9" secondAttribute="trailing" constant="16" id="2nQ-4H-8j7"/>
-                            <constraint firstItem="bp4-EL-1h9" firstAttribute="centerY" secondItem="1p9-Wt-nkN" secondAttribute="centerY" id="9vo-EN-hHK"/>
-                            <constraint firstItem="bp4-EL-1h9" firstAttribute="centerX" secondItem="1p9-Wt-nkN" secondAttribute="centerX" id="EQ2-M3-OaV"/>
-                            <constraint firstItem="bp4-EL-1h9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xoU-0B-l86" secondAttribute="leading" constant="16" id="dyp-T9-Ra3"/>
+                            <constraint firstItem="g5a-B7-QTa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1p9-Wt-nkN" secondAttribute="leading" constant="16" id="I9Z-N9-yBM"/>
+                            <constraint firstItem="g5a-B7-QTa" firstAttribute="centerY" secondItem="1p9-Wt-nkN" secondAttribute="centerY" id="RBx-w9-VQX"/>
+                            <constraint firstItem="g5a-B7-QTa" firstAttribute="centerX" secondItem="1p9-Wt-nkN" secondAttribute="centerX" id="pnx-hb-urj"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g5a-B7-QTa" secondAttribute="trailing" constant="16" id="xCX-VF-gDa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xoU-0B-l86"/>
                     </view>
@@ -67,6 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="210" y="134"/>
         </scene>
     </scenes>
 </document>

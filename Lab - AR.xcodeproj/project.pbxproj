@@ -41,6 +41,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58551FC52247702B000A47DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58CF9B872245D3B50003AC27 /* Textures */,
+				58D78D5722458040002BCDCD /* AppDelegate.swift */,
+				58D78D5D22458040002BCDCD /* Main.storyboard */,
+				58D78D6022458042002BCDCD /* Assets.xcassets */,
+				58D78D6222458042002BCDCD /* LaunchScreen.storyboard */,
+				5892F73C2245E77F0091E472 /* Utils.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		58CF9B872245D3B50003AC27 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,15 +81,10 @@
 		58D78D5622458040002BCDCD /* Lab - AR */ = {
 			isa = PBXGroup;
 			children = (
-				58D78D5722458040002BCDCD /* AppDelegate.swift */,
+				58551FC52247702B000A47DD /* Resources */,
 				58D78D5922458040002BCDCD /* art.scnassets */,
 				58D78D5B22458040002BCDCD /* ViewController.swift */,
-				58D78D5D22458040002BCDCD /* Main.storyboard */,
-				58D78D6022458042002BCDCD /* Assets.xcassets */,
-				58D78D6222458042002BCDCD /* LaunchScreen.storyboard */,
 				58D78D6522458042002BCDCD /* Info.plist */,
-				5892F73C2245E77F0091E472 /* Utils.swift */,
-				58CF9B872245D3B50003AC27 /* Textures */,
 			);
 			path = "Lab - AR";
 			sourceTree = "<group>";
