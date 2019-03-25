@@ -8,12 +8,12 @@
 
 import Darwin
 
-extension Float: DegrisToRadiansProtocol { }
-extension Double: DegrisToRadiansProtocol { }
+extension Float: DegreesToRadiansProtocol { }
+extension Double: DegreesToRadiansProtocol { }
 
-protocol DegrisToRadiansProtocol: FloatingPoint, ExpressibleByFloatLiteral { }
+protocol DegreesToRadiansProtocol: FloatingPoint, ExpressibleByFloatLiteral { }
 
-extension DegrisToRadiansProtocol {
+extension DegreesToRadiansProtocol {
     var radians: Self {
         return self * .pi / 180.0
     }
