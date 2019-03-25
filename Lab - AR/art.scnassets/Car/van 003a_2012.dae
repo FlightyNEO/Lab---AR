@@ -4,8 +4,8 @@
   <contributor>
    <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
   </contributor>
-  <created>2019-03-23T02:27:01Z</created>
-  <modified>2019-03-23T02:27:01Z</modified>
+  <created>2019-03-25T13:06:09Z</created>
+  <modified>2019-03-25T13:06:09Z</modified>
   <unit meter="1.000000"/>
   <up_axis>Y_UP</up_axis>
  </asset>
@@ -414,7 +414,7 @@
  <library_visual_scenes>
   <visual_scene id="scene46">
    <node id="van03a__$AssimpFbx$_PreRotation" name="van03a___AssimpFbx__PreRotation">
-    <matrix>0.07071067 0.07071068 1.788139e-08 0.5000191 2.980232e-09 -2.682209e-08 0.1 7.240357e-08 0.07071069 -0.07071067 -2.086163e-08 -0.1998593 0 0 0 1 </matrix>
+    <matrix>0.07071067 0.07071068 1.490116e-08 0.5000191 5.960465e-09 -2.682209e-08 0.1 -0.2 0.0707107 -0.07071067 -2.384186e-08 -1.2 0 0 0 1 </matrix>
     <node id="van03a_" name="van03a_">
      <node id="node47" name="meshId2_name">
       <instance_geometry url="#meshId2_name">

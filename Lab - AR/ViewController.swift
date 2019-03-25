@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     // --- add grass
     private func addPlaneToScene() {
         let plane = SCNNode(geometry: SCNPlane(width: 1.5, height: 1.5))
-        plane.position = SCNVector3(0.35, 0, -0.35)
+        plane.position = SCNVector3(0.35, -0.2, -1.35)
         plane.eulerAngles = SCNVector3(-(90 as Float).radians, -(45 as Float).radians, 0)
         plane.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "grass.jpg")
         sceneView.scene.rootNode.addChildNode(plane)
