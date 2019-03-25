@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58551FC7224906AE000A47DD /* grass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58551FC6224906AE000A47DD /* grass.jpg */; };
 		5892F73D2245E77F0091E472 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892F73C2245E77F0091E472 /* Utils.swift */; };
-		58CF9B8A2245D3E90003AC27 /* grass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58CF9B892245D3E90003AC27 /* grass.jpg */; };
 		58D78D5822458040002BCDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D78D5722458040002BCDCD /* AppDelegate.swift */; };
 		58D78D5A22458040002BCDCD /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D78D5922458040002BCDCD /* art.scnassets */; };
 		58D78D5C22458040002BCDCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D78D5B22458040002BCDCD /* ViewController.swift */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58551FC6224906AE000A47DD /* grass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass.jpg; sourceTree = "<group>"; };
 		5892F73C2245E77F0091E472 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		58CF9B892245D3E90003AC27 /* grass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grass.jpg; path = ../../../../../Downloads/textures/grass.jpg; sourceTree = "<group>"; };
 		58D78D5422458040002BCDCD /* Lab - AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab - AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D78D5722458040002BCDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D78D5922458040002BCDCD /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		58CF9B872245D3B50003AC27 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
-				58CF9B892245D3E90003AC27 /* grass.jpg */,
+				58551FC6224906AE000A47DD /* grass.jpg */,
 			);
 			name = Textures;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			files = (
 				58D78D5A22458040002BCDCD /* art.scnassets in Resources */,
 				58D78D6422458042002BCDCD /* LaunchScreen.storyboard in Resources */,
-				58CF9B8A2245D3E90003AC27 /* grass.jpg in Resources */,
+				58551FC7224906AE000A47DD /* grass.jpg in Resources */,
 				58D78D6122458042002BCDCD /* Assets.xcassets in Resources */,
 				58D78D5F22458040002BCDCD /* Main.storyboard in Resources */,
 			);
